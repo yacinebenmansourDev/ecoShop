@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ecoShop | Eco Friendly Store</title>
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <script defer src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="sale-bar">
+        <p class="sale-text">
+          Free Shipping with minimum purchase Rp250.000 &nbsp; &RightArrow;
+        </p>
+      </div>
+
+      <nav class="nav">
+        <div class="nav-container grid grid--02-cols">
+          <a href="./index.html" class="logo">
+            <img src="./assets/img/Logo.png" alt="ecoShop logo" />
+          </a>
+
+          <div class="nav-cta">
+            <a href="#">
+              <svg
+                class="icon"
+                width="24"
+                height="24"
+                viewBox="0 0 21 30.0001"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.99992 0.666672C6.16616 0.666672 3.07992 3.76919 3.07992 7.58667C3.07992 11.3245 6.02604 14.3679 9.73965 14.4928C9.78106 14.4942 9.82252 14.493 9.86378 14.4892C9.95337 14.4811 10.0494 14.4819 10.1137 14.4884C10.158 14.4928 10.2024 14.4943 10.2468 14.4928C13.9612 14.3679 16.9044 11.3247 16.9199 7.59084L16.9199 7.58667C16.9199 3.76772 13.8189 0.666672 9.99992 0.666672ZM5.07992 7.58667C5.07992 4.87082 7.27367 2.66667 9.99992 2.66667C12.7136 2.66667 14.9188 4.87119 14.9199 7.58463C14.9078 10.2308 12.8411 12.3746 10.2359 12.4917C10.0783 12.4803 9.91124 12.4808 9.7531 12.4918C7.14535 12.376 5.07992 10.2307 5.07992 7.58667Z"
+                  fill="#666666"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.4485 17.5818C15.4224 16.2286 12.8007 15.5833 10.2298 15.5833C7.65855 15.5833 5.03177 16.2287 2.99386 17.5799L2.99018 17.5823C1.16972 18.801 0.126465 20.5033 0.126465 22.3317C0.126465 24.1604 1.17008 25.8597 2.99156 27.0719C5.02368 28.4312 7.64819 29.08 10.2198 29.08C12.7919 29.08 15.4169 28.4309 17.4492 27.0711C19.2697 25.8525 20.3131 24.1501 20.3131 22.3217C20.3131 20.4931 19.2697 18.7939 17.4485 17.5818ZM2.12646 22.3317C2.12646 21.3239 2.69604 20.1867 4.10091 19.2456C5.74282 18.1576 7.96189 17.5833 10.2298 17.5833C12.4989 17.5833 14.7105 18.1581 16.3377 19.2449L16.3392 19.2459C17.7438 20.1804 18.3131 21.3141 18.3131 22.3217C18.3131 23.3299 17.7431 24.4677 16.3368 25.409C14.7025 26.5025 12.4876 27.08 10.2198 27.08C7.95191 27.08 5.73694 26.5024 4.10256 25.4089L4.10037 25.4074C2.69581 24.473 2.12646 23.3393 2.12646 22.3317Z"
+                  fill="#666666"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg
+                class="icon"
+                width="26"
+                height="30"
+                viewBox="0 0 26 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.3274 15C16.3274 14.2636 16.9244 13.6667 17.6608 13.6667H17.6727C18.4091 13.6667 19.0061 14.2636 19.0061 15C19.0061 15.7364 18.4091 16.3333 17.6727 16.3333H17.6608C16.9244 16.3333 16.3274 15.7364 16.3274 15Z"
+                  fill="#666666"
+                />
+                <path
+                  d="M8.32612 13.6667C7.58974 13.6667 6.99279 14.2636 6.99279 15C6.99279 15.7364 7.58974 16.3333 8.32612 16.3333H8.3381C9.07448 16.3333 9.67143 15.7364 9.67143 15C9.67143 14.2636 9.07448 13.6667 8.3381 13.6667H8.32612Z"
+                  fill="#666666"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.00011 8.74929V7.93334C6.00011 4.47734 8.74819 1.0455 12.3187 0.711176C16.4871 0.307831 20.0001 3.59174 20.0001 7.68001V8.74927C22.0735 8.96984 23.5577 9.6335 24.5022 10.7563C25.6732 12.1485 25.7828 13.9783 25.5941 15.6833L25.5925 15.6974L24.5935 23.6889C24.4461 25.0572 24.1009 26.5559 22.8797 27.6716C21.6648 28.7815 19.7827 29.3333 17.0002 29.3333H9.00021C6.21774 29.3333 4.33558 28.7815 3.12072 27.6716C1.89946 26.5559 1.55426 25.0571 1.40685 23.6888L0.407927 15.6974L0.406272 15.6833C0.2176 13.9783 0.327227 12.1485 1.49826 10.7563C2.44264 9.63354 3.92678 8.96988 6.00011 8.74929ZM12.51 2.70201C15.4875 2.41315 18.0001 4.75554 18.0001 7.68001V8.66667H8.00011V7.93334C8.00011 5.38994 10.0778 2.92902 12.5064 2.70235L12.51 2.70201ZM3.39248 23.4493L2.39338 15.4565C2.22334 13.9117 2.40078 12.7904 3.02882 12.0437C3.64827 11.3072 4.93759 10.6667 7.66687 10.6667H18.3335C21.0628 10.6667 22.3521 11.3072 22.9716 12.0437C23.5996 12.7903 23.7771 13.9116 23.6071 15.4563L22.6079 23.4493L22.6059 23.4668C22.4728 24.7094 22.1968 25.5865 21.5307 26.195C20.8556 26.8118 19.5777 27.3333 17.0002 27.3333H9.00021C6.42267 27.3333 5.14483 26.8118 4.46969 26.195C3.8036 25.5865 3.52765 24.7094 3.39451 23.4668L3.39248 23.4493Z"
+                  fill="#666666"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="nav-input-box">
+            <div class="input">
+              <svg
+                class="icon-16"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16.2791 0C7.28839 0 0 7.28839 0 16.2791C0 25.2698 7.28839 32.5581 16.2791 32.5581C20.2721 32.5581 23.9293 31.1205 26.7613 28.7347L37.618 39.5913C38.1629 40.1362 39.0464 40.1362 39.5913 39.5913C40.1362 39.0464 40.1362 38.1629 39.5913 37.618L28.7347 26.7613C31.1205 23.9293 32.5581 20.2721 32.5581 16.2791C32.5581 7.28839 25.2698 0 16.2791 0ZM2.7907 16.2791C2.7907 8.82965 8.82965 2.7907 16.2791 2.7907C23.7285 2.7907 29.7674 8.82965 29.7674 16.2791C29.7674 23.7285 23.7285 29.7674 16.2791 29.7674C8.82965 29.7674 2.7907 23.7285 2.7907 16.2791Z"
+                  fill="#333333"
+                />
+              </svg>
+
+              <input
+                type="text"
+                class="nav-input"
+                placeholder="Search here..."
+              />
+            </div>
+
+            <button class="mobile-nav" data-nav-toggle>
+              <svg
+                class="icon"
+                width="24"
+                height="24"
+                viewBox="0 0 20 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.25 1C0.25 0.585786 0.585786 0.25 1 0.25H19C19.4142 0.25 19.75 0.585786 19.75 1C19.75 1.41421 19.4142 1.75 19 1.75H1C0.585786 1.75 0.25 1.41421 0.25 1Z"
+                  fill="#333333"
+                />
+                <path
+                  d="M0.25 6C0.25 5.58579 0.585786 5.25 1 5.25H19C19.4142 5.25 19.75 5.58579 19.75 6C19.75 6.41421 19.4142 6.75 19 6.75H1C0.585786 6.75 0.25 6.41421 0.25 6Z"
+                  fill="#333333"
+                />
+                <path
+                  d="M1 10.25C0.585786 10.25 0.25 10.5858 0.25 11C0.25 11.4142 0.585786 11.75 1 11.75H19C19.4142 11.75 19.75 11.4142 19.75 11C19.75 10.5858 19.4142 10.25 19 10.25H1Z"
+                  fill="#333333"
+                />
+                <path
+                  d="M0.25 1C0.25 0.585786 0.585786 0.25 1 0.25H19C19.4142 0.25 19.75 0.585786 19.75 1C19.75 1.41421 19.4142 1.75 19 1.75H1C0.585786 1.75 0.25 1.41421 0.25 1Z"
+                  stroke="#333333"
+                />
+                <path
+                  d="M0.25 6C0.25 5.58579 0.585786 5.25 1 5.25H19C19.4142 5.25 19.75 5.58579 19.75 6C19.75 6.41421 19.4142 6.75 19 6.75H1C0.585786 6.75 0.25 6.41421 0.25 6Z"
+                  stroke="#333333"
+                />
+                <path
+                  d="M1 10.25C0.585786 10.25 0.25 10.5858 0.25 11C0.25 11.4142 0.585786 11.75 1 11.75H19C19.4142 11.75 19.75 11.4142 19.75 11C19.75 10.5858 19.4142 10.25 19 10.25H1Z"
+                  stroke="#333333"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-list-item"><a href="#" class="nav-link">NEW!</a></li>
+          <li class="nav-list-item">
+            <a href="#" class="nav-link">Clothing</a>
+          </li>
+          <li class="nav-list-item"><a href="#" class="nav-link">Bath</a></li>
+          <li class="nav-list-item">
+            <a href="#" class="nav-link">Bedding</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#" class="nav-link">Home Goods</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#" class="nav-link">Furniture</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#" class="nav-link">Footwear</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#" class="nav-link">Accesories</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero-container grid">
+          <div class="hero-content">
+            <h1 class="primary-heading">Healthy cutlery, healthy body</h1>
+            <p class="hero-text">
+              Upgrade your dining experience and begin your path to a healthy
+              you right now.
+            </p>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+          <div class="hero-img">
+            <img
+              src="./assets/img/hero.png"
+              alt="healthy coffee cup and a spoon and a lunch box"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-gallery">
+        <div class="gallery-container grid">
+          <figure class="gallery-figure figure-01">
+            <img src="./assets/img/gallery/gallery-01.png" class="mobile" />
+            <img src="./assets/img/gallery/image-11.jpg" class="desk" />
+            <figcaption>Clothing</figcaption>
+          </figure>
+
+          <figure class="gallery-figure figure-02">
+            <img src="./assets/img/gallery/gallery-02.png" />
+            <figcaption>Bedding</figcaption>
+          </figure>
+          <figure class="gallery-figure figure-03">
+            <img src="./assets/img/gallery/gallery-03.png" />
+            <figcaption>Accessories</figcaption>
+          </figure>
+          <figure class="gallery-figure figure-04">
+            <img src="./assets/img/gallery/gallery-04.png" class="mobile" />
+            <img src="./assets/img/gallery/image-22.jpg" class="desk" />
+            <figcaption>Furniture</figcaption>
+          </figure>
+          <figure class="gallery-figure figure-05">
+            <img src="./assets/img/gallery/gallery-05.png" class="mobile" />
+            <img src="./assets/img/gallery/image-33.jpg" class="desk" />
+            <figcaption>Home Goods</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-mwp">
+        <div class="mwp-container">
+          <h2 class="secondary-hading">Our Most Wanted Products</h2>
+          <p class="mwp-text">Good for environment, good for you</p>
+
+          <div class="mwp-grig grid grid--02-cols">
+            <article class="mwp-product">
+              <img
+                src="./assets/img/mostWanted/image-01.png"
+                alt="Alpine Provisions : Cedar + Sandalwood Hand Soap"
+              />
+              <p class="product-title">
+                Alpine Provisions | Cedar + Sandalwood Hand Soap
+              </p>
+              <div class="product-price">
+                <p>Rp99.900</p>
+                <p>Rp259.00</p>
+              </div>
+            </article>
+
+            <article class="mwp-product">
+              <img
+                src="./assets/img/mostWanted/image-02.png"
+                alt="Women's Classic Sole Low Back Wool Slippers"
+              />
+              <p class="product-title">
+                Women's Classic Sole Low Back Wool Slippers
+              </p>
+              <div class="product-price">
+                <p>Rp79.900</p>
+                <p>Rp159.00</p>
+              </div>
+            </article>
+
+            <article class="mwp-product">
+              <img
+                src="./assets/img/mostWanted/image-03.png"
+                alt="Large Patterned Hamper Basket"
+              />
+              <p class="product-title">Large Patterned Hamper Basket</p>
+              <div class="product-price">
+                <p>Rp199.900</p>
+                <p>Rp329.00</p>
+              </div>
+            </article>
+
+            <article class="mwp-product">
+              <img
+                src="./assets/img/mostWanted/image-04.png"
+                alt="Meliora | Eco Laundry Powder"
+              />
+              <p class="product-title">Meliora | Eco Laundry Powder</p>
+              <div class="product-price">
+                <p>Rp159.000</p>
+                <p>Rp259.00</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-new">
+        <div class="new-container">
+          <div class="new-cta">
+            <div class="new-content">
+              <h2 class="new-heading">New Arrival</h2>
+              <p class="new-text">
+                Be the first to have the first-class product
+              </p>
+            </div>
+            <div class="new-paggination">
+              <button class="prev">&larr;</button>
+              <button class="next">&rarr;</button>
+            </div>
+          </div>
+
+          <div class="new-grid">
+            <div class="swiper-wrapper slider">
+              <article class="new-article">
+                <img
+                  src="./assets/img/sellers/image-01.png"
+                  alt="Lollygagger Recycled Lounge Chair"
+                  height="180"
+                  width="148"
+                />
+                <p class="new-desc">Lollygagger Recycled Lounge Chair</p>
+                <p class="new-price">Rp699.900</p>
+              </article>
+
+              <article class="new-article">
+                <img
+                  src="./assets/img/sellers/image-02.png"
+                  alt="Lollygagger Recycled Lounge Chair"
+                  height="180"
+                  width="148"
+                />
+                <p class="new-desc">Lollygagger Recycled Lounge Chair</p>
+                <p class="new-price">Rp999.900</p>
+              </article>
+
+              <article class="new-article">
+                <img
+                  src="./assets/img/sellers/image-03.png"
+                  alt="Lollygagger Recycled Lounge Chair"
+                  height="180"
+                  width="148"
+                />
+                <p class="new-desc">Nisswa Recycled Loveseat</p>
+                <p class="new-price">Rp1.399.900</p>
+              </article>
+
+              <article class="new-article">
+                <img
+                  src="./assets/img/sellers/image-04.png"
+                  alt="Lollygagger Recycled Lounge Chair"
+                  height="180"
+                  width="148"
+                />
+                <p class="new-desc">Lollygagger Recycled Outdoor Chaise</p>
+                <p class="new-price">Rp1.199.900</p>
+              </article>
+
+              <!-- <article class="new-article">
+                <img
+                  src="./assets/img/sellers/image-05.png"
+                  alt="Lollygagger Recycled Lounge Chair"
+                  height="180"
+                  width="148"
+                />
+                <p class="new-desc">Recycled Cubby Bench</p>
+                <p class="new-price">Rp1.159.900</p>
+              </article>
+
+              <article class="new-article">
+                <img
+                  src="./assets/img/sellers/image-06.png"
+                  alt="Lollygagger Recycled Lounge Chair"
+                  height="180"
+                  width="148"
+                />
+                <p class="new-desc">Fresh Air Recycled Table</p>
+                <p class="new-price">Rp999.000</p>
+              </article>
+
+              <article class="new-article">
+                <img
+                  src="./assets/img/sellers/image-07.png"
+                  alt="Lollygagger Recycled Lounge Chair"
+                  height="180"
+                  width="148"
+                />
+                <p class="new-desc">Emin Recycled Dining Chair</p>
+                <p class="new-price">Rp659.000</p>
+              </article>
+
+              <article class="new-article">
+                <img
+                  src="./assets/img/sellers/image-08.png"
+                  alt="Lollygagger Recycled Lounge Chair"
+                  height="180"
+                  width="148"
+                />
+                <p class="new-desc">Satellite Recycled Round End Table</p>
+                <p class="new-price">Rp399.000</p>
+              </article> -->
+            </div>
+          </div>
+
+          <button class="btn new-btn">See More</button>
+        </div>
+      </section>
+
+      <section class="section-bg">
+        <div class="bg-container">
+          <p class="bg-text">
+            Shop guilt-free knowing that our eco-friendly e-commerce platform is
+            committed to reducing environmental impact and promoting sustainable
+            practices in every step of the shopping process
+          </p>
+          <img src="./assets/img/bg/line.svg" class="bg-line" />
+        </div>
+      </section>
+
+      <section class="section-why">
+        <div class="why-container">
+          <h2 class="why-heading">
+            <span aria-hidden="true">
+              <img src="./assets/img/whyUs/bg.png" /> </span
+            ><span class="heading">Why Bought From Us?</span>
+          </h2>
+          <div class="why-grid grid">
+            <article class="why-article">
+              <div class="svg">
+                <svg
+                  viewBox="0 0 56 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="truck"
+                >
+                  <path
+                    d="M13 40C10.9167 40 9.14584 39.2708 7.6875 37.8125C6.22917 36.3542 5.5 34.5833 5.5 32.5C4.125 32.5 2.9475 32.01 1.9675 31.03C0.987504 30.05 0.498338 28.8733 0.500004 27.5V5C0.500004 3.625 0.990004 2.4475 1.97 1.4675C2.95 0.487504 4.12667 -0.00166242 5.5 4.24448e-06H35.5C36.875 4.24448e-06 38.0525 0.490004 39.0325 1.47C40.0125 2.45 40.5017 3.62667 40.5 5V10H46.75C47.1667 10 47.5417 10.0833 47.875 10.25C48.2083 10.4167 48.5 10.6667 48.75 11L55 19.3125C55.1667 19.5208 55.2917 19.75 55.375 20C55.4583 20.25 55.5 20.5208 55.5 20.8125V30C55.5 30.7083 55.26 31.3025 54.78 31.7825C54.3 32.2625 53.7067 32.5017 53 32.5H50.5C50.5 34.5833 49.7708 36.3542 48.3125 37.8125C46.8542 39.2708 45.0833 40 43 40C40.9167 40 39.1458 39.2708 37.6875 37.8125C36.2292 36.3542 35.5 34.5833 35.5 32.5H20.5C20.5 34.5833 19.7708 36.3542 18.3125 37.8125C16.8542 39.2708 15.0833 40 13 40ZM13 35C13.7083 35 14.3025 34.76 14.7825 34.28C15.2625 33.8 15.5017 33.2067 15.5 32.5C15.5 31.7917 15.26 31.1975 14.78 30.7175C14.3 30.2375 13.7067 29.9983 13 30C12.2917 30 11.6975 30.24 11.2175 30.72C10.7375 31.2 10.4983 31.7933 10.5 32.5C10.5 33.2083 10.74 33.8025 11.22 34.2825C11.7 34.7625 12.2933 35.0017 13 35ZM43 35C43.7083 35 44.3025 34.76 44.7825 34.28C45.2625 33.8 45.5017 33.2067 45.5 32.5C45.5 31.7917 45.26 31.1975 44.78 30.7175C44.3 30.2375 43.7067 29.9983 43 30C42.2917 30 41.6975 30.24 41.2175 30.72C40.7375 31.2 40.4983 31.7933 40.5 32.5C40.5 33.2083 40.74 33.8025 41.22 34.2825C41.7 34.7625 42.2933 35.0017 43 35ZM40.5 22.5H51.125L45.5 15H40.5V22.5Z"
+                    fill="#999999"
+                  />
+                </svg>
+              </div>
+              <p class="why-title">Free Shipping</p>
+              <p class="why-desc">
+                Shop now and enjoy free shipping on all orders
+              </p>
+            </article>
+
+            <article class="why-article">
+              <div class="svg">
+                <svg
+                  class="emoji"
+                  viewBox="0 0 50 50"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M25 50C38.8075 50 50 38.8075 50 25C50 11.1925 38.8075 0 25 0C11.1925 0 0 11.1925 0 25C0 38.8075 11.1925 50 25 50ZM15.9925 33.8825C16.1393 33.6846 16.3237 33.5175 16.5351 33.3909C16.7466 33.2643 16.9809 33.1806 17.2247 33.1446C17.4685 33.1086 17.717 33.121 17.956 33.1811C18.195 33.2413 18.4198 33.3479 18.6175 33.495C20.4375 34.845 22.635 35.625 25 35.625C27.365 35.625 29.5625 34.8425 31.3825 33.495C31.5796 33.3416 31.8054 33.2291 32.0466 33.1642C32.2879 33.0993 32.5396 33.0832 32.7871 33.1169C33.0346 33.1506 33.2729 33.2335 33.4879 33.3606C33.703 33.4876 33.8905 33.6564 34.0394 33.857C34.1883 34.0575 34.2956 34.2858 34.3551 34.5284C34.4146 34.771 34.425 35.0231 34.3857 35.2698C34.3463 35.5164 34.2582 35.7528 34.1262 35.9649C33.9943 36.177 33.8214 36.3607 33.6175 36.505C31.1293 38.3653 28.1067 39.372 25 39.375C21.8933 39.372 18.8707 38.3653 16.3825 36.505C15.9831 36.2089 15.7176 35.7663 15.6445 35.2745C15.5713 34.7827 15.6965 34.282 15.9925 33.8825ZM35 21.25C35 23.32 33.88 25 32.5 25C31.12 25 30 23.32 30 21.25C30 19.18 31.12 17.5 32.5 17.5C33.88 17.5 35 19.18 35 21.25ZM17.5 25C18.88 25 20 23.32 20 21.25C20 19.18 18.88 17.5 17.5 17.5C16.12 17.5 15 19.18 15 21.25C15 23.32 16.12 25 17.5 25Z"
+                    fill="#999999"
+                  />
+                </svg>
+              </div>
+
+              <p class="why-title">Satisfaction Guaranted</p>
+              <p class="why-desc">
+                Our satisfaction guarantee ensures quality products
+              </p>
+            </article>
+
+            <article class="why-article">
+              <div class="svg">
+                <svg
+                  class="leaf"
+                  viewBox="0 0 44 43"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.125 43C19.75 43 18.3642 42.8433 16.9675 42.53C15.5708 42.2167 14.1442 41.7692 12.6875 41.1875C13.1875 36.1458 14.6458 31.4375 17.0625 27.0625C19.4792 22.6875 22.5833 18.8333 26.375 15.5C21.7917 17.8333 17.8225 20.9167 14.4675 24.75C11.1125 28.5833 8.76917 32.9583 7.4375 37.875C7.27084 37.75 7.11417 37.615 6.9675 37.47L6.5 37C4.54167 35.0417 3.05167 32.8542 2.03 30.4375C1.00834 28.0208 0.498337 25.5 0.500004 22.875C0.500004 20.0417 1.0625 17.3333 2.1875 14.75C3.3125 12.1667 4.875 9.87501 6.875 7.87501C10.25 4.50001 14.625 2.30251 20 1.28251C25.375 0.262506 32.9167 0.168338 42.625 1.00001C43.375 10.9583 43.25 18.5525 42.25 23.7825C41.25 29.0125 39.0833 33.2933 35.75 36.625C33.7083 38.6667 31.4267 40.24 28.905 41.345C26.3833 42.45 23.79 43.0017 21.125 43Z"
+                    fill="#999999"
+                  />
+                </svg>
+              </div>
+              <p class="why-title">Eco Friendly Packaging</p>
+              <p class="why-desc">
+                Our satisfaction guarantee ensures quality products
+              </p>
+            </article>
+
+            <article class="why-article">
+              <div class="svg">
+                <svg
+                  class="headphone"
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M50.5 18C51.8261 18 53.0979 18.5268 54.0355 19.4645C54.9732 20.4021 55.5 21.6739 55.5 23V33C55.5 34.3261 54.9732 35.5978 54.0355 36.5355C53.0979 37.4732 51.8261 38 50.5 38H47.845C47.2355 42.8332 44.8832 47.2779 41.2294 50.5C37.5756 53.722 32.8715 55.4999 28 55.5V50.5C31.9782 50.5 35.7936 48.9197 38.6066 46.1066C41.4196 43.2936 43 39.4782 43 35.5V20.5C43 16.5217 41.4196 12.7064 38.6066 9.89339C35.7936 7.08035 31.9782 5.5 28 5.5C24.0218 5.5 20.2064 7.08035 17.3934 9.89339C14.5804 12.7064 13 16.5217 13 20.5V38H5.5C4.17392 38 2.90215 37.4732 1.96447 36.5355C1.02678 35.5978 0.5 34.3261 0.5 33V23C0.5 21.6739 1.02678 20.4021 1.96447 19.4645C2.90215 18.5268 4.17392 18 5.5 18H8.155C8.76508 13.1672 11.1177 8.72318 14.7714 5.50168C18.4252 2.28019 23.1289 0.502686 28 0.502686C32.8711 0.502686 37.5748 2.28019 41.2286 5.50168C44.8823 8.72318 47.2349 13.1672 47.845 18H50.5ZM17.4 37.4625L20.05 33.2225C22.4327 34.7151 25.1884 35.5045 28 35.5C30.8116 35.5045 33.5673 34.7151 35.95 33.2225L38.6 37.4625C35.4231 39.4529 31.7489 40.5058 28 40.5C24.2511 40.5059 20.5768 39.453 17.4 37.4625Z"
+                    fill="#999999"
+                  />
+                </svg>
+              </div>
+              <p class="why-title">Fast Response</p>
+              <p class="why-desc">
+                24/7 fast and reliable assistance whenever you need it
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-logo">
+        <div class="logo-heading">
+          <h2>
+            <span>We</span>
+            <span>Are</span>
+            <span>Exist</span>
+          </h2>
+        </div>
+        <div class="logo-content grid">
+          <img src="./assets/img/logos/logo-01.png" alt="tvri" />
+          <img src="./assets/img/logos/logo-02.png" alt="metro xinwen" />
+          <img src="./assets/img/logos/logo-03.png" alt="metro globe network" />
+          <img src="./assets/img/logos/logo-04.png" alt="metro tv" />
+          <img src="./assets/img/logos/logo-05.png" alt="berita satu" />
+          <img src="./assets/img/logos/logo-06.png" alt="sea today" />
+          <img src="./assets/img/logos/logo-07.png" alt="iNews" />
+          <img src="./assets/img/logos/logo-08.png" alt="cnbc" />
+        </div>
+      </section>
+
+      <section class="section-subscribe">
+        <div class="subscribe-container">
+          <form action="#">
+            <p class="subscribe-title">Subscribe to our newsletter</p>
+            <p class="subscribe-text">
+              Be the first to know about exclusive offers, eco-tips, and new
+              arrivals!
+            </p>
+            <div class="subscribe-input">
+              <input type="email" placeholder="Your email" />
+              <button>Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="grid grid--02-cols footer-grid">
+          <section class="footer-section">
+            <h3 class="tertiary-heading">Eco Shop</h3>
+            <ul class="footer-list">
+              <li class="footer-list-item">About Us</li>
+              <li class="footer-list-item">Contact Us</li>
+              <li class="footer-list-item">FAQs</li>
+            </ul>
+          </section>
+          <section class="footer-section">
+            <h3 class="tertiary-heading">Product Categories</h3>
+            <nav>
+              <ul class="footer-list">
+                <li class="footer-list-item">New</li>
+                <li class="footer-list-item">Clothing</li>
+                <li class="footer-list-item">Bath & Bedding</li>
+                <li class="footer-list-item">Home Goods</li>
+                <li class="footer-list-item">Furniture</li>
+                <li class="footer-list-item">Accesories</li>
+                <li class="footer-list-item">Gift</li>
+              </ul>
+            </nav>
+          </section>
+          <section class="footer-section">
+            <h3 class="tertiary-heading">Support</h3>
+            <ul class="footer-list">
+              <li class="footer-list-item">Shipping</li>
+              <li class="footer-list-item">Returns</li>
+              <li class="footer-list-item">Privacy Policy</li>
+              <li class="footer-list-item">Terms of Use</li>
+              <li class="footer-list-item">Affiliates</li>
+            </ul>
+          </section>
+          <section class="footer-section">
+            <h3 class="tertiary-heading">Payment</h3>
+            <div class="payment-grid">
+              <img src="./assets/img/footer/logo-01.png" alt="bca-bank" />
+              <img src="./assets/img/footer/logo-02.png" alt="mandiri-bank" />
+              <img src="./assets/img/footer/logo-03.png" alt="bni-bank" />
+              <img src="./assets/img/footer/logo-04.png" alt="bri-bank" />
+              <img src="./assets/img/footer/logo-05.png" alt="bsi-bank" />
+              <img src="./assets/img/footer/logo-06.png" alt="mega-bank" />
+              <img src="./assets/img/footer/logo-07.png" alt="may-bank" />
+              <img src="./assets/img/footer/logo-08.png" alt="go-pay" />
+              <img src="./assets/img/footer/logo-09.png" alt="Shopee-pay" />
+              <img src="./assets/img/footer/logo-10.png" alt="dana" />
+              <img src="./assets/img/footer/logo-11.png" alt="visa" />
+              <img src="./assets/img/footer/logo-12.png" alt="master-card" />
+            </div>
+          </section>
+        </div>
+
+        <div class="footer-separator"></div>
+        <div class="footer-social">
+          <div class="social-icon">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="40" height="40" rx="20" fill="#333333" />
+              <path
+                d="M10 29.2595L11.435 23.924C10.2777 21.8455 9.91003 19.4202 10.3994 17.0929C10.8888 14.7657 12.2024 12.6927 14.0992 11.2543C15.996 9.81594 18.3487 9.1087 20.7256 9.26236C23.1026 9.41602 25.3443 10.4203 27.0394 12.0908C28.7345 13.7614 29.7694 15.9862 29.9541 18.357C30.1387 20.7279 29.4608 23.0856 28.0447 24.9977C26.6286 26.9098 24.5694 28.248 22.2448 28.7666C19.9202 29.2853 17.4863 28.9496 15.3896 27.8213L10 29.2595ZM15.6494 25.8247L15.9827 26.0221C17.5014 26.9207 19.2752 27.2926 21.0277 27.0798C22.7802 26.8669 24.4129 26.0813 25.6715 24.8453C26.9301 23.6093 27.7437 21.9924 27.9857 20.2466C28.2277 18.5007 27.8844 16.724 27.0093 15.1933C26.1342 13.6625 24.7765 12.4638 23.1478 11.7838C21.519 11.1039 19.7108 10.9809 18.0047 11.4341C16.2986 11.8873 14.7907 12.8912 13.7158 14.2893C12.6409 15.6874 12.0594 17.4013 12.062 19.1638C12.0606 20.6251 12.4654 22.0583 13.2315 23.3036L13.4405 23.6476L12.6383 26.6256L15.6494 25.8247Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M23.7394 20.5339C23.544 20.3765 23.3152 20.2658 23.0704 20.2101C22.8257 20.1544 22.5714 20.1552 22.327 20.2124C21.9598 20.3647 21.7225 20.94 21.4853 21.2276C21.4352 21.2965 21.3617 21.3449 21.2785 21.3636C21.1953 21.3823 21.1081 21.37 21.0333 21.3291C19.6889 20.8034 18.5621 19.8394 17.8357 18.5937C17.7738 18.5159 17.7445 18.4172 17.754 18.3184C17.7634 18.2195 17.811 18.1281 17.8866 18.0635C18.1512 17.802 18.3455 17.478 18.4515 17.1216C18.4751 16.7285 18.3849 16.337 18.1917 15.9936C18.0423 15.5123 17.758 15.0837 17.3725 14.7584C17.1736 14.6692 16.9531 14.6392 16.7376 14.6722C16.5221 14.7053 16.3207 14.7998 16.1579 14.9446C15.8751 15.1881 15.6506 15.4919 15.5011 15.8335C15.3515 16.1752 15.2805 16.546 15.2935 16.9186C15.2944 17.1278 15.3209 17.3362 15.3726 17.539C15.5038 18.0262 15.7055 18.4918 15.9714 18.9208C16.1633 19.2495 16.3726 19.5676 16.5985 19.874C17.3327 20.8802 18.2556 21.7345 19.3159 22.3894C19.848 22.7223 20.4167 22.9929 21.0107 23.196C21.6278 23.4752 22.3091 23.5824 22.9824 23.5062C23.3659 23.4482 23.7294 23.297 24.0407 23.0659C24.352 22.8348 24.6016 22.5308 24.7676 22.1808C24.8651 21.9693 24.8947 21.7329 24.8523 21.504C24.7506 21.0358 24.1235 20.7595 23.7394 20.5339Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+
+          <div class="social-icon">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="40" height="40" rx="20" fill="#333333" />
+              <path
+                d="M26.2758 14.2524C26.1431 14.1838 26.014 14.1086 25.8888 14.0271C25.5248 13.7865 25.1911 13.503 24.8948 13.1826C24.1535 12.3344 23.8766 11.4739 23.7746 10.8715H23.7787C23.6936 10.3714 23.7288 10.0479 23.7341 10.0479H20.3577V23.1038C20.3577 23.2791 20.3577 23.4523 20.3503 23.6235C20.3503 23.6448 20.3483 23.6645 20.347 23.6874C20.347 23.6968 20.347 23.7067 20.345 23.7165C20.345 23.7189 20.345 23.7214 20.345 23.7239C20.3094 24.1923 20.1592 24.6448 19.9077 25.0416C19.6562 25.4384 19.311 25.7673 18.9025 25.9994C18.4768 26.2416 17.9953 26.3686 17.5055 26.368C15.9324 26.368 14.6574 25.0852 14.6574 23.5011C14.6574 21.9169 15.9324 20.6341 17.5055 20.6341C17.8033 20.6339 18.0993 20.6807 18.3824 20.773L18.3865 17.3351C17.527 17.2241 16.6538 17.2924 15.822 17.5358C14.9902 17.7791 14.2178 18.1922 13.5537 18.7489C12.9717 19.2546 12.4825 19.8579 12.1079 20.5318C11.9654 20.7775 11.4277 21.7649 11.3625 23.3675C11.3216 24.2772 11.5948 25.2196 11.725 25.6091V25.6173C11.8069 25.8466 12.1243 26.6293 12.6416 27.2891C13.0587 27.8183 13.5515 28.2833 14.1041 28.6689V28.6607L14.1123 28.6689C15.7469 29.7796 17.5592 29.7067 17.5592 29.7067C17.8729 29.694 18.9238 29.7067 20.1173 29.1411C21.441 28.5141 22.1946 27.5799 22.1946 27.5799C22.676 27.0217 23.0588 26.3855 23.3266 25.6988C23.6321 24.8956 23.7341 23.9323 23.7341 23.5473V16.6209C23.7751 16.6454 24.3206 17.0063 24.3206 17.0063C24.3206 17.0063 25.1065 17.51 26.3328 17.8381C27.2125 18.0715 28.3978 18.1207 28.3978 18.1207V14.7688C27.9825 14.8139 27.1392 14.6828 26.2758 14.2524Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+
+          <div class="social-icon">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="40" height="40" rx="20" fill="#333333" />
+              <path
+                d="M16.6712 20.0514C16.6712 18.2089 18.164 16.7148 20.006 16.7148C21.848 16.7148 23.3416 18.2089 23.3416 20.0514C23.3416 21.8939 21.848 23.3879 20.006 23.3879C18.164 23.3879 16.6712 21.8939 16.6712 20.0514ZM14.868 20.0514C14.868 22.8899 17.1683 25.1908 20.006 25.1908C22.8437 25.1908 25.144 22.8899 25.144 20.0514C25.144 17.2128 22.8437 14.9119 20.006 14.9119C17.1683 14.9119 14.868 17.2128 14.868 20.0514ZM24.1466 14.7081C24.1465 14.9457 24.2169 15.1779 24.3487 15.3755C24.4806 15.5731 24.6681 15.7271 24.8874 15.8181C25.1068 15.9091 25.3482 15.933 25.5811 15.8867C25.8141 15.8405 26.0281 15.7262 26.1961 15.5582C26.3641 15.3903 26.4785 15.1764 26.5249 14.9434C26.5713 14.7104 26.5477 14.4689 26.4569 14.2494C26.3661 14.0299 26.2122 13.8423 26.0148 13.7102C25.8174 13.5782 25.5853 13.5077 25.3478 13.5076H25.3474C25.029 13.5077 24.7238 13.6342 24.4987 13.8593C24.2735 14.0844 24.1469 14.3897 24.1466 14.7081V14.7081ZM15.9636 28.1984C14.988 28.1539 14.4578 27.9914 14.1054 27.8541C13.6383 27.6721 13.3049 27.4555 12.9545 27.1054C12.604 26.7553 12.3871 26.4222 12.206 25.9549C12.0687 25.6026 11.9062 25.0721 11.8618 24.0962C11.8133 23.0412 11.8036 22.7243 11.8036 20.0514C11.8036 17.3786 11.8141 17.0626 11.8618 16.0067C11.9063 15.0308 12.07 14.5013 12.206 14.148C12.3879 13.6807 12.6045 13.3473 12.9545 12.9967C13.3045 12.6462 13.6375 12.4292 14.1054 12.248C14.4576 12.1106 14.988 11.9481 15.9636 11.9037C17.0183 11.8552 17.3351 11.8455 20.006 11.8455C22.6769 11.8455 22.994 11.856 24.0496 11.9037C25.0252 11.9482 25.5545 12.1119 25.9078 12.248C26.3749 12.4292 26.7083 12.6466 27.0587 12.9967C27.4092 13.3468 27.6253 13.6807 27.8072 14.148C27.9445 14.5003 28.107 15.0308 28.1514 16.0067C28.1999 17.0626 28.2096 17.3786 28.2096 20.0514C28.2096 22.7243 28.1999 23.0403 28.1514 24.0962C28.1069 25.0721 27.9436 25.6025 27.8072 25.9549C27.6253 26.4222 27.4087 26.7556 27.0587 27.1054C26.7087 27.4551 26.3749 27.6721 25.9078 27.8541C25.5556 27.9915 25.0252 28.154 24.0496 28.1984C22.9949 28.2469 22.6781 28.2566 20.006 28.2566C17.3339 28.2566 17.018 28.2469 15.9636 28.1984V28.1984ZM15.8807 10.1031C14.8155 10.1516 14.0877 10.3206 13.452 10.568C12.7937 10.8235 12.2364 11.1663 11.6795 11.7225C11.1226 12.2786 10.7808 12.837 10.5254 13.4955C10.278 14.1317 10.1091 14.8594 10.0606 15.9249C10.0113 16.9921 10 17.3333 10 20.0514C10 22.7695 10.0113 23.1106 10.0606 24.1778C10.1091 25.2434 10.278 25.971 10.5254 26.6073C10.7808 27.2654 11.1227 27.8244 11.6795 28.3803C12.2363 28.9362 12.7937 29.2785 13.452 29.5348C14.0889 29.7822 14.8155 29.9511 15.8807 29.9996C16.9482 30.0482 17.2887 30.0603 20.006 30.0603C22.7233 30.0603 23.0644 30.049 24.1313 29.9996C25.1966 29.9511 25.9239 29.7822 26.56 29.5348C27.2179 29.2785 27.7756 28.9365 28.3325 28.3803C28.8894 27.8241 29.2305 27.2654 29.4866 26.6073C29.734 25.971 29.9037 25.2433 29.9514 24.1778C29.9999 23.1098 30.0112 22.7695 30.0112 20.0514C30.0112 17.3333 29.9999 16.9921 29.9514 15.9249C29.9029 14.8593 29.734 14.1313 29.4866 13.4955C29.2305 12.8374 28.8885 12.2795 28.3325 11.7225C27.7765 11.1654 27.2179 10.8235 26.5608 10.568C25.9239 10.3206 25.1965 10.1508 24.1321 10.1031C23.0652 10.0546 22.7241 10.0425 20.0068 10.0425C17.2895 10.0425 16.9482 10.0538 15.8807 10.1031Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+
+          <div class="social-icon">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="40" height="40" rx="20" fill="#333333" />
+              <path
+                d="M24.8938 21.3023L25.4638 17.6812H21.953V15.3275C21.953 14.3373 22.4432 13.3698 24.0105 13.3698H25.629V10.2863C24.6865 10.136 23.734 10.0546 22.7794 10.043C19.8899 10.043 18.0035 11.78 18.0035 14.9201V17.6812H14.8005V21.3023H18.0035V30.0607H21.953V21.3023H24.8938Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+        <p class="copy">&copy; 2023 Eco Shop Indonesia. All Rights Reserved.</p>
+
+        <img
+          class="footer-bg"
+          src="./assets/img/footer/background.png"
+          aria-hidden="true"
+        />
+        <img
+          class="footer-icon"
+          src="./assets/img/footer/badge.png"
+          aria-hidden="true"
+        />
+      </div>
+    </footer>
+
+    <button class="btn-coupon">
+      <svg
+        width="28"
+        height="22"
+        viewBox="0 0 28 22"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3.33317 0.333496C2.62593 0.333496 1.94765 0.614448 1.44755 1.11454C0.947455 1.61464 0.666504 2.29292 0.666504 3.00016V8.3335C1.37375 8.3335 2.05203 8.61445 2.55212 9.11454C3.05222 9.61464 3.33317 10.2929 3.33317 11.0002C3.33317 11.7074 3.05222 12.3857 2.55212 12.8858C2.05203 13.3859 1.37375 13.6668 0.666504 13.6668V19.0002C0.666504 19.7074 0.947455 20.3857 1.44755 20.8858C1.94765 21.3859 2.62593 21.6668 3.33317 21.6668H24.6665C25.3737 21.6668 26.052 21.3859 26.5521 20.8858C27.0522 20.3857 27.3332 19.7074 27.3332 19.0002V13.6668C26.6259 13.6668 25.9477 13.3859 25.4476 12.8858C24.9475 12.3857 24.6665 11.7074 24.6665 11.0002C24.6665 10.2929 24.9475 9.61464 25.4476 9.11454C25.9477 8.61445 26.6259 8.3335 27.3332 8.3335V3.00016C27.3332 2.29292 27.0522 1.61464 26.5521 1.11454C26.052 0.614448 25.3737 0.333496 24.6665 0.333496H3.33317ZM18.6665 4.3335L20.6665 6.3335L9.33317 17.6668L7.33317 15.6668L18.6665 4.3335ZM9.7465 4.38683C11.0532 4.38683 12.1065 5.44016 12.1065 6.74683C12.1065 7.37274 11.8579 7.97301 11.4153 8.4156C10.9727 8.85819 10.3724 9.10683 9.7465 9.10683C8.43984 9.10683 7.3865 8.0535 7.3865 6.74683C7.3865 6.12092 7.63515 5.52064 8.07773 5.07806C8.52032 4.63547 9.12059 4.38683 9.7465 4.38683ZM18.2532 12.8935C19.5598 12.8935 20.6132 13.9468 20.6132 15.2535C20.6132 15.8794 20.3645 16.4797 19.9219 16.9223C19.4794 17.3649 18.8791 17.6135 18.2532 17.6135C16.9465 17.6135 15.8932 16.5602 15.8932 15.2535C15.8932 14.6276 16.1418 14.0273 16.5844 13.5847C17.027 13.1421 17.6273 12.8935 18.2532 12.8935Z"
+          fill="white"
+        />
+      </svg>
+    </button>
+    <button class="btn-message">
+      <svg
+        width="28"
+        height="28"
+        viewBox="0 0 28 28"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M22.6265 20.4398L23.1465 24.6532C23.2798 25.7598 22.0932 26.5332 21.1465 25.9598L16.5332 23.2132C16.2132 23.0265 16.1332 22.6265 16.3065 22.3065C16.9732 21.0798 17.3332 19.6932 17.3332 18.3065C17.3332 13.4265 13.1465 9.45317 7.99984 9.45317C6.9465 9.45317 5.91984 9.61317 4.95984 9.93317C4.4665 10.0932 3.9865 9.63984 4.1065 9.13317C5.31984 4.27984 9.9865 0.666504 15.5598 0.666504C22.0665 0.666504 27.3332 5.5865 27.3332 11.6532C27.3332 15.2532 25.4798 18.4398 22.6265 20.4398Z"
+          fill="white"
+        />
+        <path
+          d="M15.3332 18.3065C15.3332 19.8932 14.7465 21.3598 13.7598 22.5198C12.4398 24.1198 10.3465 25.1465 7.99984 25.1465L4.51984 27.2132C3.93317 27.5732 3.1865 27.0798 3.2665 26.3998L3.59984 23.7732C1.81317 22.5332 0.666504 20.5465 0.666504 18.3065C0.666504 15.9598 1.91984 13.8932 3.83984 12.6665C5.0265 11.8932 6.45317 11.4532 7.99984 11.4532C12.0532 11.4532 15.3332 14.5198 15.3332 18.3065Z"
+          fill="white"
+        />
+      </svg>
+    </button>
+  </body>
+</html>
